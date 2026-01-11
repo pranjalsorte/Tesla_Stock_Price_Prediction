@@ -3,4 +3,5 @@ numpy<2.0
 pandas
 matplotlib
 scikit-learn
+tensorflow==2.20.0
 keras
