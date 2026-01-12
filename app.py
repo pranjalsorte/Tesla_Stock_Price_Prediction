@@ -48,8 +48,16 @@ scaled_data = scaler.fit_transform(df[['Adj Close']])
 # Load Models
 # -----------------------------------------------
 
-simple_rnn_model = load_model("models/simple_rnn_model.h5")
-lstm_model = load_model("models/lstm_model.h5")
+simple_rnn_model = load_model(
+    "models/simple_rnn_model.h5",
+    compile=False
+)
+
+lstm_model = load_model(
+    "models/lstm_model.h5",
+    compile=False
+)
+
 
 # -----------------------------------------------
 # Create Input Sequence
