@@ -8,7 +8,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from tensorflow.keras.models import load_model
-from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 
 
@@ -124,4 +123,5 @@ if st.button("Predict Stock Price"):
     plt.xlabel("Days Ahead")
     plt.ylabel("Stock Price")
     plt.legend()
-    st.pyplot(plt)
+    st.pyplot(plt.gcf())
+    plt.close()
